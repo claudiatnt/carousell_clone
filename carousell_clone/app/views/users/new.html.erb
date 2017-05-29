@@ -1,0 +1,14 @@
+<h1>Users#new</h1>
+
+<h2>Sign Up for an Account</h2>
+<%= form_for @user do |form| %>
+
+    <%= render partial: '/users/form', object: form %>
+
+    <div class="submit-field">
+      <%= form.submit %>
+    </div>
+
+<% end %>
+
+<p>Find me in app/views/users/new.html.erb</p>
